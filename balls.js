@@ -1596,5 +1596,5 @@
   }
 
   // Exposed for automated smoke tests only.
-  window.__ballParty = { game, balls: () => balls, camera, startLevel, trampPos: () => [tramp.pos.x, tramp.H, tramp.pos.z] };
+  window.__ballParty = { game, balls: () => balls, camera, startLevel, trampPos: () => [tramp.pos.x, tramp.H, tramp.pos.z], tapBall, tapTramp };
 })();
