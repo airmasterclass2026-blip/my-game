@@ -92,8 +92,9 @@ h1 {
 
 .mode-btn {
   pointer-events: auto;
-  width: clamp(100px, 28vw, 200px);
+  width: clamp(80px, 22vw, 190px);
   aspect-ratio: 1;
+  text-decoration: none;
   border-radius: 30%;
   background: var(--c);
   color: #fff;
@@ -108,8 +109,9 @@ h1 {
 }
 .mode-btn:nth-child(2) { animation-delay: -1s; }
 .mode-btn:nth-child(3) { animation-delay: -2s; }
-.mode-btn span { font-size: clamp(46px, 12vw, 92px); line-height: 1.1; }
-.mode-btn b { font-size: clamp(18px, 4.6vw, 32px); }
+.mode-btn:nth-child(4) { animation-delay: -0.5s; }
+.mode-btn span { font-size: clamp(38px, 10vw, 84px); line-height: 1.1; }
+.mode-btn b { font-size: clamp(14px, 3.6vw, 28px); text-align: center; line-height: 1.05; }
 .mode-btn:active { transform: translateY(8px) scale(0.96); }
 
 /* ---------- HUD ---------- */

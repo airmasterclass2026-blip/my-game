@@ -32,9 +32,32 @@ To try it locally with a server: `python3 -m http.server` and then open http://l
 
 > The voice uses the device's built-in text-to-speech. Most phones, tablets and computers include offline voices. If none is available, the game still works with sounds and on-screen pictures.
 
+
+## 🏀 Ball House (balls.html)
+
+A 3D indoor play centre with a **ball pit full of bouncing balls**, a **slide**, a **trampoline** and a giant **bouncy hopper ball**. Two original cartoon friends host it: **Momo** the mouse and **Bolt** the yellow buddy.
+
+| Level | Host | What the child does | Learning goals |
+|---|---|---|---|
+| 1 | 🐭 Momo | "Momo wants red balls!": tap the balls of that color and they fly into Momo's bucket, counted out loud | Color recognition, counting 1–5 |
+| 2 | 💛 Bolt | "Give Bolt three balls!", then "Make Bolt jump four times!" on the trampoline, then "Find the BIG ball!" | Counting a set, counting actions, big vs little |
+
+Each level has 3 rounds. Finishing one moves on to the other, and the game gets slowly harder as the child succeeds.
+
+**Ways to play anytime:**
+- Tap a ball and it jumps.
+- Tap the pit floor for a boom that bounces the balls nearby.
+- Drag a finger through the pit to stir the balls.
+- Tap the slide to send balls whooshing down it.
+- Tap the trampoline to make the friend on it bounce and spin.
+- Tap the hopper ball or a character to make them bounce or giggle.
+
+After every round, the character goes down the slide and splashes into the balls.
+
 ## Files
 - `index.html`, `style.css`: page and on-screen buttons
-- `game.js`: all game logic (Three.js scene, activities, sounds, voice)
+- `game.js`: Tiny Explorers activities (colors, shapes, counting)
+- `balls.html`, `balls.css`, `balls.js`: Ball House game
 - `vendor/three.min.js`: Three.js r158 (MIT license)
 - `sw.js`, `manifest.webmanifest`, `icons/`: offline and installable app support
 

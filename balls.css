@@ -1,0 +1,78 @@
+/* Ball Party additions on top of style.css */
+html, body { background: #8fd8ff; }
+
+#select {
+  background: radial-gradient(circle at 50% 45%, rgba(255, 255, 255, 0.5), rgba(143, 216, 255, 0.15) 65%);
+}
+
+.cards {
+  display: flex;
+  gap: clamp(16px, 5vw, 48px);
+  align-items: center;
+  justify-content: center;
+}
+
+.level-card {
+  position: relative;
+  width: clamp(140px, 38vw, 240px);
+  padding: 14px 10px 16px;
+  border-radius: 36px;
+  background: var(--c);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  box-shadow: 0 12px 0 var(--d), 0 18px 30px rgba(0, 0, 0, 0.2);
+  animation: bob 3s ease-in-out infinite;
+}
+.level-card:nth-child(2) { animation-delay: -1.5s; }
+.level-card:active { transform: translateY(8px) scale(0.96); }
+.level-card svg { width: 80%; height: auto; filter: drop-shadow(0 4px 0 rgba(0, 0, 0, 0.15)); }
+.level-card b { font-size: clamp(26px, 6vw, 40px); }
+.level-card small { font-size: clamp(16px, 3.6vw, 22px); opacity: 0.95; }
+.level-card .badge {
+  position: absolute;
+  top: -14px;
+  left: -10px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #ffd21f;
+  color: #7a4b00;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 54px;
+  box-shadow: 0 4px 0 #d9a400;
+}
+
+.more-games {
+  margin-top: 26px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #33415c;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.prompt-main { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+#promptText { line-height: 1; }
+#promptIcon .num { font-size: 56px; color: #ff4f6d; line-height: 1; }
+#slots { display: flex; gap: 6px; }
+#slots i {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px dashed #b8c2d6;
+  display: inline-block;
+}
+#slots i.on {
+  border: none;
+  background: radial-gradient(circle at 35% 30%, #fff 0 18%, var(--c) 20%);
+  animation: bump 0.4s ease-out;
+}
+#prompt { height: 84px; }
+
+#party.level b { color: #fff; }

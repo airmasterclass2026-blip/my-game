@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#8fd8ff">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="Ball Party: a bouncy 3D ball-pit learning game for toddlers. Colors, counting and big vs little.">
+  <title>Ball House 3D</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="balls.css">
+</head>
+<body>
+  <canvas id="scene" aria-label="Ball pit"></canvas>
+
+  <div id="start" class="screen">
+    <h1>Ball<br>House!</h1>
+    <button id="playBtn" class="play-btn" aria-label="Play">&#9654;</button>
+    <p class="tagline">Tap to play!</p>
+  </div>
+
+  <div id="select" class="screen hidden">
+    <div class="cards">
+      <button class="level-card" data-level="1" style="--c:#ff7a59;--d:#d9542f">
+        <i class="badge">1</i>
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="22" cy="26" r="19" fill="#8d6748"/><circle cx="22" cy="26" r="12" fill="#ffb3c6"/>
+          <circle cx="78" cy="26" r="19" fill="#8d6748"/><circle cx="78" cy="26" r="12" fill="#ffb3c6"/>
+          <circle cx="50" cy="56" r="34" fill="#8d6748"/>
+          <ellipse cx="50" cy="70" rx="20" ry="15" fill="#ffe3c4"/>
+          <ellipse cx="40" cy="50" rx="7" ry="9" fill="#fff"/><ellipse cx="60" cy="50" rx="7" ry="9" fill="#fff"/>
+          <circle cx="41" cy="52" r="4.5" fill="#1d1d28"/><circle cx="59" cy="52" r="4.5" fill="#1d1d28"/>
+          <circle cx="50" cy="64" r="5" fill="#ff6f91"/>
+          <path d="M42 74 Q50 81 58 74" stroke="#1d1d28" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        <b>Momo</b><small>Colors</small>
+      </button>
+      <button class="level-card" data-level="2" style="--c:#3d8bff;--d:#2563c9">
+        <i class="badge">2</i>
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <line x1="50" y1="4" x2="50" y2="18" stroke="#555" stroke-width="3"/><circle cx="50" cy="6" r="5" fill="#ff5fa2"/>
+          <rect x="20" y="16" width="60" height="84" rx="30" fill="#ffd93b"/>
+          <circle cx="38" cy="44" r="12" fill="#fff"/><circle cx="62" cy="44" r="12" fill="#fff"/>
+          <circle cx="39" cy="46" r="6.5" fill="#2f74ff"/><circle cx="61" cy="46" r="6.5" fill="#2f74ff"/>
+          <circle cx="39" cy="46" r="3.2" fill="#1d1d28"/><circle cx="61" cy="46" r="3.2" fill="#1d1d28"/>
+          <path d="M40 64 Q50 72 60 64" stroke="#1d1d28" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <polygon points="38,80 50,85 38,90" fill="#ff5a36"/><polygon points="62,80 50,85 62,90" fill="#ff5a36"/>
+        </svg>
+        <b>Bolt</b><small>Counting</small>
+      </button>
+    </div>
+    <a class="more-games" href="index.html">&#127968; More games</a>
+  </div>
+
+  <div id="hud" class="hidden">
+    <button id="homeBtn" class="round-btn" aria-label="Back">&#127968;</button>
+    <button id="prompt" aria-label="Hear it again">
+      <span id="promptIcon"></span>
+      <span class="prompt-main"><span id="promptText"></span><span id="slots"></span></span>
+    </button>
+  </div>
+
+  <div id="topRight">
+    <button id="soundBtn" class="round-btn" aria-label="Sound on or off">&#128266;</button>
+    <div id="stars"><span>&#11088;</span><b id="starCount">0</b></div>
+  </div>
+
+  <div id="party" class="hidden"></div>
+
+  <script src="vendor/three.min.js"></script>
+  <script src="balls.js"></script>
+</body>
+</html>

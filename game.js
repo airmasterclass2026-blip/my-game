@@ -1052,7 +1052,7 @@
     Voice.say("Hi friend! Let's play! Pick a game.");
   });
 
-  document.querySelectorAll('.mode-btn').forEach((btn) => {
+  document.querySelectorAll('.mode-btn[data-mode]').forEach((btn) => {
     btn.addEventListener('click', () => {
       Sound.unlock();
       Sound.ding();
