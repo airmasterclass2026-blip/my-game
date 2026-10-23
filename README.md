@@ -33,6 +33,17 @@ To try it locally with a server: `python3 -m http.server` and then open http://l
 > The voice uses the device's built-in text-to-speech. Most phones, tablets and computers include offline voices. If none is available, the game still works with sounds and on-screen pictures.
 
 
+
+## ☀️ Pip's Good Habits (habits.html)
+
+A step-by-step good-habits game based on a children's video about morning routines and kindness. The guide is **Pip**, an original character, and the cast also includes Tia, Grandma and Grandpa. At every step, a voice explains what to do and why, a pointing finger shows where to tap, and a tracker at the bottom shows the steps left.
+
+| Level | Steps | Habits learned |
+|---|---|---|
+| 1 ☀️ Good Morning | Tap the ringing clock, make the bed (blanket and pillow), wash the dirty face (3 splashes), brush teeth (4 brushes), get dressed (shirt and hat) | Waking up on time, tidiness, hygiene, self-care |
+| 2 🍎 Healthy & Tidy | Choose 3 healthy foods (chips, soda, candy and donuts are "sometimes treats"), put 4 toys in the toy box, pack the school bag | Healthy eating, tidying up, being organized |
+| 3 🤝 Helping Hands | Carry Grandma's bags, share an apple with Tia, feed 3 chickens, give Grandpa his dropped hat | Helping, sharing, caring for animals, saying "Thank you" and "You're welcome" |
+
 ## 🏀 Ball House (balls.html)
 
 A 3D indoor play centre with a **ball pit full of bouncing balls**, a **slide**, a **trampoline** and a giant **bouncy hopper ball**. Two original cartoon friends host it: **Momo** the mouse and **Bolt** the yellow buddy.
@@ -58,6 +69,7 @@ After every round, the character goes down the slide and splashes into the balls
 - `index.html`, `style.css`: page and on-screen buttons
 - `game.js`: Tiny Explorers activities (colors, shapes, counting)
 - `balls.html`, `balls.css`, `balls.js`: Ball House game
+- `habits.html`, `habits.css`, `habits.js`: Pip's Good Habits game
 - `vendor/three.min.js`: Three.js r158 (MIT license)
 - `sw.js`, `manifest.webmanifest`, `icons/`: offline and installable app support
 

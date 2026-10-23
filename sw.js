@@ -1,5 +1,5 @@
 // Offline cache for Tiny Explorers 3D. Bump VERSION when any file changes.
-const VERSION = 'tiny-explorers-v2';
+const VERSION = 'tiny-explorers-v3';
 const FILES = [
   './',
   './index.html',
@@ -8,6 +8,9 @@ const FILES = [
   './balls.html',
   './balls.css',
   './balls.js',
+  './habits.html',
+  './habits.css',
+  './habits.js',
   './vendor/three.min.js',
   './manifest.webmanifest',
   './icons/icon.svg',
